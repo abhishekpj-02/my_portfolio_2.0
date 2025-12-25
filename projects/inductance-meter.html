@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Inductance Meter</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<nav>
+  <span class="logo">Abhishek</span>
+  <div class="nav-links">
+    <a href="../index.html#projects">← Back to Projects</a>
+  </div>
+</nav>
+
+<section class="section project-detail">
+
+  <h1>Inductance Meter</h1>
+
+  <img
+    src="../images/Wiring Diagram (1).png"
+    class="project-hero"
+    alt="Arduino based inductance meter circuit diagram"
+  >
+
+  <h3>Overview</h3>
+  <p>
+    This project implements an Arduino-based inductance meter that measures
+    unknown inductance values using the principle of LC resonance and
+    frequency measurement.
+  </p>
+
+  <h3>Problem Statement</h3>
+  <p>
+    Measuring inductance accurately using basic instruments can be difficult
+    and expensive. This project aims to provide a low-cost and simple method
+    to measure inductance using commonly available components.
+  </p>
+
+  <h3>Working Principle</h3>
+  <p>
+    An LC tank circuit is formed using a known capacitor and the unknown
+    inductor. The resonant frequency of the circuit is measured using a
+    comparator-based signal conditioning stage and processed by the Arduino
+    to calculate the inductance value.
+  </p>
+
+  <h3>Circuit Architecture</h3>
+  <p>
+    The circuit consists of an LC resonant network, a comparator for waveform
+    shaping, and an Arduino microcontroller for frequency measurement and
+    computation.
+  </p>
+
+  <h3>Technologies Used</h3>
+  <ul>
+    <li>Arduino</li>
+    <li>LC Resonant Circuits</li>
+    <li>Comparator (Signal Conditioning)</li>
+    <li>Embedded C</li>
+    <li>Analog Electronics</li>
+  </ul>
+
+  <h3>Why This Project Matters</h3>
+  <p>
+    This project strengthened my understanding of analog electronics,
+    signal conditioning, and microcontroller-based measurement systems.
+    It bridges theoretical concepts with practical implementation.
+  </p>
+
+  <h3>Future Improvements</h3>
+  <p>
+    Accuracy can be improved using better frequency resolution, calibration,
+    temperature compensation, and a refined PCB-based design.
+  </p>
+
+  <!-- GitHub Icon -->
+  <div class="project-links">
+    <a href="https://github.com/abhishekpj-02/Inductance-Meter"
+       target="_blank"
+       class="repo-icon"
+       aria-label="View the repository">
+      <img src="../icons/github_5968896.png" alt="GitHub Repository">
+      <span class="tooltip">View the repository</span>
+    </a>
+  </div>
+
+</section>
+
+</body>
+</html>

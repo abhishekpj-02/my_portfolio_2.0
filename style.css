@@ -360,3 +360,115 @@ button:focus-visible {
     grid-template-columns: 1fr;
   }
 }
+/* ================= PROJECT DETAIL PAGE ================= */
+
+.project-detail {
+  max-width: 800px;
+}
+
+.project-detail h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-detail h3 {
+  margin-top: 2.5rem;
+  margin-bottom: 0.6rem;
+  font-size: 1.2rem;
+}
+
+.project-detail p {
+  color: #bdbdbd;
+  line-height: 1.8;
+}
+
+.project-detail ul {
+  margin-left: 1.2rem;
+  color: #bdbdbd;
+}
+
+.project-detail li {
+  margin-bottom: 0.4rem;
+}
+
+.project-hero {
+  width: 100%;
+  max-width: 560px;     /* smaller than 720 */
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  margin: 1.8rem auto;
+  display: block;
+  border-radius: 14px;
+}
+
+/* ================= PROJECT REPO ICON ================= */
+
+.project-links {
+  margin-top: 2.5rem;
+}
+
+/* Icon container */
+.repo-icon {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+/* Icon image */
+.repo-icon img {
+  width: 22px;
+  height: 22px;
+  filter: brightness(0.9);
+}
+
+/* Hover pop */
+.repo-icon:hover {
+  transform: translateY(-6px) scale(1.1);
+  background: rgba(154, 215, 255, 0.15);
+  box-shadow: 0 12px 28px rgba(154, 215, 255, 0.4);
+}
+
+.repo-icon:hover img {
+  filter: brightness(1.1);
+}
+
+/* Tooltip */
+.repo-icon .tooltip {
+  position: absolute;
+  bottom: -38px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #111;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 6px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+/* Tooltip arrow */
+.repo-icon .tooltip::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent #111 transparent;
+}
+
+/* Show tooltip on hover */
+.repo-icon:hover .tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(4px);
+}
