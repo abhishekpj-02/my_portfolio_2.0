@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <!-- Background Animation -->
@@ -16,43 +18,54 @@
   <!-- Navigation -->
   <nav>
     <span class="logo">Abhishek</span>
+
+    <div class="mobile-menu-btn">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
     <div class="nav-links">
       <a href="#projects">Projects</a>
       <a href="#about">About</a>
+      <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </div>
   </nav>
 
   <!-- Hero -->
-<section class="hero" id="home">
-  <div class="hero-content">
-    <span class="badge">ECE • ML • IoT</span>
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <span class="badge">ECE • ML • IoT</span>
 
-    <h1>Hi, I'm Abhishek P J</h1>
+      <h1>Hi, I'm <span class="gradient-text">Abhishek P J</span></h1>
 
-    <p class="subtitle">
-      Electronics & Computer Engineering student
-      <span>building software</span>,
-      <span>ML systems</span>, and
-      <span>IoT solutions</span>.
-    </p>
+      <p class="subtitle">
+        Electronics & Computer Engineering student
+        <span>building software</span>,
+        <span>ML systems</span>, and
+        <span>IoT solutions</span>.
+      </p>
 
-    <a href="#contact" class="btn">Get in touch</a>
-  </div>
+      <div class="hero-btns">
+        <a href="#projects" class="btn primary">View Work</a>
+        <a href="#contact" class="btn secondary">Get in touch</a>
+      </div>
+    </div>
 
-  <div class="hero-image">
-    <img
-      src="images/ABHISHEK_PASSPORT_PHOTO-transformed.jpg"
-      alt="Abhishek P J"
-      class="profile-img"
-    />
-  </div>
-</section>
+    <div class="hero-image">
+      <div class="img-wrapper">
+        <img src="images/ABHISHEK_PASSPORT_PHOTO-transformed.jpg" alt="Abhishek P J" class="profile-img" />
+      </div>
+    </div>
+  </section>
 
 
   <!-- About -->
   <section id="about" class="section about">
-    <h2>About</h2>
+    <div class="section-header">
+      <h2>About Me</h2>
+    </div>
 
     <div class="about-content">
       <p class="about-lead">
@@ -83,16 +96,64 @@
     </div>
   </section>
 
+  <!-- Skills -->
+  <section id="skills" class="section skills-section">
+    <div class="section-header">
+      <h2>Technical Skills</h2>
+    </div>
+
+    <div class="skills-grid">
+      <!-- Embedded & IoT -->
+      <div class="skill-category">
+        <h3>Embedded & IoT</h3>
+        <div class="skill-tags">
+          <span>Arduino</span>
+          <span>ESP32/8266</span>
+          <span>Raspberry Pi</span>
+          <span>LoRaWAN</span>
+          <span>C/C++</span>
+          <span>Sensors & Actuators</span>
+        </div>
+      </div>
+
+      <!-- Machine Learning -->
+      <div class="skill-category">
+        <h3>Machine Learning</h3>
+        <div class="skill-tags">
+          <span>TensorFlow</span>
+          <span>OpenCV</span>
+          <span>Python</span>
+          <span>Data Analysis</span>
+          <span>Flask Deployment</span>
+        </div>
+      </div>
+
+      <!-- Web Technologies -->
+      <div class="skill-category">
+        <h3>Web & Tools</h3>
+        <div class="skill-tags">
+          <span>HTML/CSS</span>
+          <span>JavaScript</span>
+          <span>Git/GitHub</span>
+          <span>VS Code</span>
+          <span>Linux</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Projects -->
   <section id="projects" class="section projects-section">
-    <h2>Projects</h2>
+    <div class="section-header">
+      <h2>Featured Projects</h2>
+    </div>
 
     <div class="projects-grid">
 
       <a href="projects/gesture-auth.html" class="project-card">
         <div class="project-image">
           <img src="images/Gemini_Generated_Image_191nj3191nj3191n.png"
-               alt="Gesture based authentication using computer vision">
+            alt="Gesture based authentication using computer vision">
         </div>
         <h3>Gesture-Based Authentication</h3>
         <p>
@@ -104,7 +165,7 @@
       <a href="projects/street-light.html" class="project-card">
         <div class="project-image">
           <img src="images/Gemini_Generated_Image_abnhfgabnhfgabnh.png"
-               alt="Smart street lights turning on when a car passes">
+            alt="Smart street lights turning on when a car passes">
         </div>
         <h3>Smart Street Light System</h3>
         <p>
@@ -115,8 +176,7 @@
 
       <a href="projects/inductance-meter.html" class="project-card">
         <div class="project-image">
-          <img src="images/Wiring Diagram (1).png"
-               alt="Arduino inductance meter circuit diagram">
+          <img src="images/Wiring Diagram (1).png" alt="Arduino inductance meter circuit diagram">
         </div>
         <h3>Inductance Meter</h3>
         <p>
@@ -126,51 +186,51 @@
       </a>
 
       <a href="projects/real-time-temperature.html" class="project-card">
-  <div class="project-image">
-    <img src="images/temp_monitor.jpeg"
-         alt="Real-time temperature measurement system">
-  </div>
-  <h3>Real-Time Temperature Measurement</h3>
-  <p>
-    Embedded system for real-time temperature monitoring using sensors
-    and microcontroller-based processing.
-  </p>
-</a>
+        <div class="project-image">
+          <img src="images/temp_monitor.jpeg" alt="Real-time temperature measurement system">
+        </div>
+        <h3>Real-Time Temperature Measurement</h3>
+        <p>
+          Embedded system for real-time temperature monitoring using sensors
+          and microcontroller-based processing.
+        </p>
+      </a>
 
 
     </div>
   </section>
 
   <!-- Contact -->
-<section id="contact" class="section contact">
-  <h2 class="connect-title">Let’s connect!</h2>
+  <section id="contact" class="section contact">
+    <h2 class="connect-title">Let’s connect!</h2>
 
-  <div class="connect-icons">
-    <a href="mailto:abhishekpj12@gmail.com" class="icon mail" aria-label="Email">
-      <img src="icons/icons8-gmail.svg" alt="Email">
-    </a>
+    <div class="connect-icons">
+      <a href="mailto:abhishekpj12@gmail.com" class="icon mail" aria-label="Email">
+        <img src="icons/icons8-gmail.svg" alt="Email">
+      </a>
 
-    <a href="https://www.linkedin.com/in/abhishek-p-j-488200280/" target="_blank" class="icon linkedin" aria-label="LinkedIn">
-      <img src="icons/linkedin_11378979.png" alt="LinkedIn">
-    </a>
+      <a href="https://www.linkedin.com/in/abhishek-p-j-488200280/" target="_blank" class="icon linkedin"
+        aria-label="LinkedIn">
+        <img src="icons/linkedin_11378979.png" alt="LinkedIn">
+      </a>
 
-    <a href="https://github.com/abhishekpj-02" target="_blank" class="icon github" aria-label="GitHub">
-      <img src="icons/github_5968896.png" alt="GitHub">
-    </a>
+      <a href="https://github.com/abhishekpj-02" target="_blank" class="icon github" aria-label="GitHub">
+        <img src="icons/github_5968896.png" alt="GitHub">
+      </a>
 
-    <a href="https://instagram.com/" target="_blank" class="icon instagram" aria-label="Instagram">
-      <img src="icons/social_15527900.png" alt="Instagram">
-    </a>
+      <a href="https://instagram.com/" target="_blank" class="icon instagram" aria-label="Instagram">
+        <img src="icons/social_15527900.png" alt="Instagram">
+      </a>
 
-    <a href="https://t.me/forsythe_11" target="_blank" class="icon telegram" aria-label="Telegram">
-      <img src="icons/social-media_15789337.png" alt="Telegram">
-    </a>
+      <a href="https://t.me/forsythe_11" target="_blank" class="icon telegram" aria-label="Telegram">
+        <img src="icons/social-media_15789337.png" alt="Telegram">
+      </a>
 
-    <a href="https://wa.me/qr/NBZRBXQAZKGEB1" target="_blank" class="icon whatsapp" aria-label="WhatsApp">
-      <img src="icons/whatsapp_12635043.png" alt="WhatsApp">
-    </a>
-  </div>
-</section>
+      <a href="https://wa.me/qr/NBZRBXQAZKGEB1" target="_blank" class="icon whatsapp" aria-label="WhatsApp">
+        <img src="icons/whatsapp_12635043.png" alt="WhatsApp">
+      </a>
+    </div>
+  </section>
 
 
   <footer>
@@ -179,5 +239,5 @@
 
   <script src="script.js"></script>
 </body>
-</html>
 
+</html>
