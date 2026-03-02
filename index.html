@@ -8,11 +8,29 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .project-card {
+      position: relative;
+    }
+
+    .ongoing-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: #ffb703;
+      color: #000;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 4px 8px;
+      border-radius: 6px;
+      z-index: 2;
+    }
+  </style>
 </head>
 
 <body>
 
-  <!-- Background Animation -->
   <canvas id="background"></canvas>
 
   <!-- Navigation -->
@@ -60,7 +78,6 @@
     </div>
   </section>
 
-
   <!-- About -->
   <section id="about" class="section about">
     <div class="section-header">
@@ -74,24 +91,13 @@
       </p>
 
       <p>
-        Often, simple moments—like looking out of a bus window—trigger ideas about
-        how everyday systems can be improved through technology. I have a strong
-        interest in embedded systems and IoT, and I enjoy working on projects driven
-        by curiosity and practical impact.
+        I have strong interests in embedded systems, IoT, and intelligent
+        computing solutions driven by real-world impact.
       </p>
 
       <p>
-        One project I’m particularly proud of is a smart street light system that
-        addressed a real social problem. Although the edge computing component is
-        still a work in progress, the project deepened my interest in embedded and
-        intelligent systems.
-      </p>
-
-      <p>
-        Currently, I’m exploring machine learning, hardware-oriented design, and IoT
-        communication technologies such as <strong>LoRaWAN</strong>. My goal is to
-        strengthen my foundation in <strong>edge computing</strong> while actively
-        seeking internships in machine learning and embedded systems.
+        Currently exploring machine learning, hardware-oriented design,
+        and communication technologies such as <strong>LoRaWAN</strong>.
       </p>
     </div>
   </section>
@@ -103,7 +109,6 @@
     </div>
 
     <div class="skills-grid">
-      <!-- Embedded & IoT -->
       <div class="skill-category">
         <h3>Embedded & IoT</h3>
         <div class="skill-tags">
@@ -116,26 +121,22 @@
         </div>
       </div>
 
-      <!-- Machine Learning -->
       <div class="skill-category">
         <h3>Machine Learning</h3>
         <div class="skill-tags">
           <span>TensorFlow</span>
           <span>OpenCV</span>
           <span>Python</span>
-          <span>Data Analysis</span>
-          <span>Flask Deployment</span>
+          <span>Flask</span>
         </div>
       </div>
 
-      <!-- Web Technologies -->
       <div class="skill-category">
         <h3>Web & Tools</h3>
         <div class="skill-tags">
           <span>HTML/CSS</span>
           <span>JavaScript</span>
           <span>Git/GitHub</span>
-          <span>VS Code</span>
           <span>Linux</span>
         </div>
       </div>
@@ -150,10 +151,30 @@
 
     <div class="projects-grid">
 
+      <!-- Ongoing Project -->
+      <a href="projects/ar-rehab.html" class="project-card">
+
+        <span class="ongoing-badge">Ongoing</span>
+
+        <div class="project-image">
+          <img src="images/ar_rehab_placeholder.png"
+               alt="AR Pediatric Rehabilitation Games Suite">
+        </div>
+
+        <h3>AR Pediatric Rehabilitation Games Suite</h3>
+
+        <p>
+          AR-based rehabilitation games designed to help children perform
+          therapy exercises through interactive and engaging gameplay.
+        </p>
+
+      </a>
+
+      <!-- Gesture Authentication -->
       <a href="projects/gesture-auth.html" class="project-card">
         <div class="project-image">
           <img src="images/Gemini_Generated_Image_191nj3191nj3191n.png"
-            alt="Gesture based authentication using computer vision">
+               alt="Gesture based authentication">
         </div>
         <h3>Gesture-Based Authentication</h3>
         <p>
@@ -162,40 +183,42 @@
         </p>
       </a>
 
+      <!-- Smart Street Light -->
       <a href="projects/street-light.html" class="project-card">
         <div class="project-image">
           <img src="images/Gemini_Generated_Image_abnhfgabnhfgabnh.png"
-            alt="Smart street lights turning on when a car passes">
+               alt="Smart street light system">
         </div>
         <h3>Smart Street Light System</h3>
         <p>
-          IoT-based lighting system with motion sensing and
-          intelligent control logic.
+          IoT-based lighting system with motion sensing and intelligent control logic.
         </p>
       </a>
 
+      <!-- Inductance Meter -->
       <a href="projects/inductance-meter.html" class="project-card">
         <div class="project-image">
-          <img src="images/Wiring Diagram (1).png" alt="Arduino inductance meter circuit diagram">
+          <img src="images/Wiring Diagram (1).png"
+               alt="Inductance meter circuit">
         </div>
         <h3>Inductance Meter</h3>
         <p>
           Arduino-based inductance meter using LC resonance and
-          comparator-based signal conditioning for accurate measurement.
+          comparator-based signal conditioning.
         </p>
       </a>
 
+      <!-- Temperature Monitoring -->
       <a href="projects/real-time-temperature.html" class="project-card">
         <div class="project-image">
-          <img src="images/temp_monitor.jpeg" alt="Real-time temperature measurement system">
+          <img src="images/temp_monitor.jpeg"
+               alt="Temperature monitoring system">
         </div>
         <h3>Real-Time Temperature Measurement</h3>
         <p>
-          Embedded system for real-time temperature monitoring using sensors
-          and microcontroller-based processing.
+          Embedded system for real-time temperature monitoring using sensors.
         </p>
       </a>
-
 
     </div>
   </section>
@@ -205,39 +228,17 @@
     <h2 class="connect-title">Let’s connect!</h2>
 
     <div class="connect-icons">
-      <a href="mailto:abhishekpj12@gmail.com" class="icon mail" aria-label="Email">
-        <img src="icons/icons8-gmail.svg" alt="Email">
-      </a>
-
-      <a href="https://www.linkedin.com/in/abhishek-p-j-488200280/" target="_blank" class="icon linkedin"
-        aria-label="LinkedIn">
-        <img src="icons/linkedin_11378979.png" alt="LinkedIn">
-      </a>
-
-      <a href="https://github.com/abhishekpj-02" target="_blank" class="icon github" aria-label="GitHub">
-        <img src="icons/github_5968896.png" alt="GitHub">
-      </a>
-
-      <a href="https://www.instagram.com/abhishek._.pj/" target="_blank" class="icon instagram" aria-label="Instagram">
-        <img src="icons/social_15527900.png" alt="Instagram">
-      </a>
-
-      <a href="https://t.me/forsythe_11" target="_blank" class="icon telegram" aria-label="Telegram">
-        <img src="icons/social-media_15789337.png" alt="Telegram">
-      </a>
-
-      <a href="https://wa.me/qr/NBZRBXQAZKGEB1" target="_blank" class="icon whatsapp" aria-label="WhatsApp">
-        <img src="icons/whatsapp_12635043.png" alt="WhatsApp">
-      </a>
+      <a href="mailto:abhishekpj12@gmail.com"><img src="icons/icons8-gmail.svg" alt="Email"></a>
+      <a href="https://www.linkedin.com/in/abhishek-p-j-488200280/" target="_blank"><img src="icons/linkedin_11378979.png" alt="LinkedIn"></a>
+      <a href="https://github.com/abhishekpj-02" target="_blank"><img src="icons/github_5968896.png" alt="GitHub"></a>
     </div>
   </section>
-
 
   <footer>
     © 2025 Abhishek P J
   </footer>
 
   <script src="script.js"></script>
-</body>
 
+</body>
 </html>
