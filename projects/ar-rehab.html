@@ -27,46 +27,64 @@
 
   <h3>Overview</h3>
   <p>
-    An augmented reality–based games suite designed to support pediatric
-    rehabilitation by encouraging children to perform therapeutic
-    exercises through interactive AR gameplay.
+    AR Pediatric Rehabilitation Games Suite is an interactive motion-based
+    therapy platform designed to assist pediatric rehabilitation through
+    engaging mini-games. Using computer vision and gesture tracking,
+    therapeutic movements are transformed into simple games that encourage
+    children to perform physical exercises consistently while keeping them
+    motivated and entertained.
   </p>
 
   <h3>Problem Statement</h3>
   <p>
-    Traditional rehabilitation exercises for children can be repetitive
-    and disengaging, leading to reduced participation and slower recovery.
-    There is a need for an interactive and motivating rehabilitation
-    approach tailored for pediatric patients.
+    Rehabilitation exercises for children are often repetitive and can
+    quickly become boring, which reduces participation and affects recovery
+    progress. Therapists require an engaging system that motivates children
+    while still capturing meaningful movement data during therapy sessions.
   </p>
 
   <h3>Solution</h3>
   <p>
-    The system uses augmented reality and computer vision to convert
-    rehabilitation movements into interactive games. Children perform
-    prescribed physical actions while receiving real-time visual feedback,
-    making therapy engaging and goal-oriented.
+    This project introduces a computer-vision driven rehabilitation game
+    system where children interact with on-screen targets using hand
+    movements. Real-time motion tracking converts therapy exercises into
+    gameplay tasks such as popping balloons, allowing rehabilitation to
+    feel more like a game while maintaining therapeutic value.
   </p>
+
+  <h3>Current Features</h3>
+  <ul>
+    <li>Balloon-popping therapy game using hand gesture interaction</li>
+    <li>Dynamic balloon spawn logic with configurable spawn timing</li>
+    <li>Target spawn interval tuning (currently 3.5 seconds)</li>
+    <li>Velocity-based weighting to analyse motion speed</li>
+    <li>Logarithmic scaling for improved motion sensitivity</li>
+    <li>Interaction heatmap generation to visualise movement patterns</li>
+  </ul>
 
   <h3>Technologies Used</h3>
   <ul>
-    <li>Augmented Reality frameworks</li>
-    <li>Computer Vision</li>
     <li>Python</li>
-    <li>Game Logic & Motion Tracking</li>
+    <li>OpenCV</li>
+    <li>MediaPipe (hand tracking)</li>
+    <li>Computer Vision</li>
+    <li>Game Logic & Motion Analysis</li>
   </ul>
 
   <h3>Current Work</h3>
   <p>
-    Improving motion detection accuracy, refining AR interactions, and
-    designing child-friendly game mechanics aligned with therapy goals.
+    The project is currently focused on refining motion detection accuracy,
+    improving gesture responsiveness, and analysing player interaction data
+    through heatmaps to better understand rehabilitation movement patterns.
   </p>
 
   <h3>Planned Enhancements</h3>
-  <p>
-    Adding progress tracking, personalised rehabilitation routines, and
-    remote monitoring features for therapists.
-  </p>
+  <ul>
+    <li>Additional rehabilitation mini-games</li>
+    <li>Adaptive difficulty based on patient movement behaviour</li>
+    <li>Progress tracking and performance analytics</li>
+    <li>Therapist dashboard for monitoring rehabilitation sessions</li>
+  </ul>
 
   <div class="project-links">
     <a href="https://github.com/abhishekpj-02/ar-pediatric-rehab-games-suite"
