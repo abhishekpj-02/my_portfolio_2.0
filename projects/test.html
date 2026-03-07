@@ -8,29 +8,11 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-
-  <style>
-    .project-card {
-      position: relative;
-    }
-
-    .ongoing-badge {
-      position: absolute;
-      top: 12px;
-      left: 12px;
-      background: #ffb703;
-      color: #000;
-      font-size: 0.75rem;
-      font-weight: 600;
-      padding: 4px 8px;
-      border-radius: 6px;
-      z-index: 2;
-    }
-  </style>
 </head>
 
 <body>
 
+  <!-- Background Animation -->
   <canvas id="background"></canvas>
 
   <!-- Navigation -->
@@ -78,6 +60,7 @@
     </div>
   </section>
 
+
   <!-- About -->
   <section id="about" class="section about">
     <div class="section-header">
@@ -91,13 +74,24 @@
       </p>
 
       <p>
-        I have strong interests in embedded systems, IoT, and intelligent
-        computing solutions driven by real-world impact.
+        Often, simple moments—like looking out of a bus window—trigger ideas about
+        how everyday systems can be improved through technology. I have a strong
+        interest in embedded systems and IoT, and I enjoy working on projects driven
+        by curiosity and practical impact.
       </p>
 
       <p>
-        Currently exploring machine learning, hardware-oriented design,
-        and communication technologies such as <strong>LoRaWAN</strong>.
+        One project I’m particularly proud of is a smart street light system that
+        addressed a real social problem. Although the edge computing component is
+        still a work in progress, the project deepened my interest in embedded and
+        intelligent systems.
+      </p>
+
+      <p>
+        Currently, I’m exploring machine learning, hardware-oriented design, and IoT
+        communication technologies such as <strong>LoRaWAN</strong>. My goal is to
+        strengthen my foundation in <strong>edge computing</strong> while actively
+        seeking internships in machine learning and embedded systems.
       </p>
     </div>
   </section>
@@ -109,6 +103,7 @@
     </div>
 
     <div class="skills-grid">
+      <!-- Embedded & IoT -->
       <div class="skill-category">
         <h3>Embedded & IoT</h3>
         <div class="skill-tags">
@@ -121,22 +116,26 @@
         </div>
       </div>
 
+      <!-- Machine Learning -->
       <div class="skill-category">
         <h3>Machine Learning</h3>
         <div class="skill-tags">
           <span>TensorFlow</span>
           <span>OpenCV</span>
           <span>Python</span>
-          <span>Flask</span>
+          <span>Data Analysis</span>
+          <span>Flask Deployment</span>
         </div>
       </div>
 
+      <!-- Web Technologies -->
       <div class="skill-category">
         <h3>Web & Tools</h3>
         <div class="skill-tags">
           <span>HTML/CSS</span>
           <span>JavaScript</span>
           <span>Git/GitHub</span>
+          <span>VS Code</span>
           <span>Linux</span>
         </div>
       </div>
@@ -151,30 +150,10 @@
 
     <div class="projects-grid">
 
-      <!-- Ongoing Project -->
-      <a href="projects/ar-rehab.html" class="project-card">
-
-        <span class="ongoing-badge">Ongoing</span>
-
-        <div class="project-image">
-          <img src="images/ar_rehab_placeholder.png"
-               alt="AR Pediatric Rehabilitation Games Suite">
-        </div>
-
-        <h3>AR Pediatric Rehabilitation Games Suite</h3>
-
-        <p>
-          AR-based rehabilitation games designed to help children perform
-          therapy exercises through interactive and engaging gameplay.
-        </p>
-
-      </a>
-
-      <!-- Gesture Authentication -->
       <a href="projects/gesture-auth.html" class="project-card">
         <div class="project-image">
           <img src="images/Gemini_Generated_Image_191nj3191nj3191n.png"
-               alt="Gesture based authentication">
+            alt="Gesture based authentication using computer vision">
         </div>
         <h3>Gesture-Based Authentication</h3>
         <p>
@@ -183,42 +162,40 @@
         </p>
       </a>
 
-      <!-- Smart Street Light -->
       <a href="projects/street-light.html" class="project-card">
         <div class="project-image">
           <img src="images/Gemini_Generated_Image_abnhfgabnhfgabnh.png"
-               alt="Smart street light system">
+            alt="Smart street lights turning on when a car passes">
         </div>
         <h3>Smart Street Light System</h3>
         <p>
-          IoT-based lighting system with motion sensing and intelligent control logic.
+          IoT-based lighting system with motion sensing and
+          intelligent control logic.
         </p>
       </a>
 
-      <!-- Inductance Meter -->
       <a href="projects/inductance-meter.html" class="project-card">
         <div class="project-image">
-          <img src="images/Wiring Diagram (1).png"
-               alt="Inductance meter circuit">
+          <img src="images/Wiring Diagram (1).png" alt="Arduino inductance meter circuit diagram">
         </div>
         <h3>Inductance Meter</h3>
         <p>
           Arduino-based inductance meter using LC resonance and
-          comparator-based signal conditioning.
+          comparator-based signal conditioning for accurate measurement.
         </p>
       </a>
 
-      <!-- Temperature Monitoring -->
       <a href="projects/real-time-temperature.html" class="project-card">
         <div class="project-image">
-          <img src="images/temp_monitor.jpeg"
-               alt="Temperature monitoring system">
+          <img src="images/temp_monitor.jpeg" alt="Real-time temperature measurement system">
         </div>
         <h3>Real-Time Temperature Measurement</h3>
         <p>
-          Embedded system for real-time temperature monitoring using sensors.
+          Embedded system for real-time temperature monitoring using sensors
+          and microcontroller-based processing.
         </p>
       </a>
+
 
     </div>
   </section>
@@ -255,11 +232,12 @@
     </div>
   </section>
 
+
   <footer>
     © 2025 Abhishek P J
   </footer>
 
   <script src="script.js"></script>
-
 </body>
+
 </html>
